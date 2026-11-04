@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: white;
+  line-height: 1.5;
+}
+header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  margin-right: 20px;
+}
+a, h1, h2, h3 {
+  color: #183b5b;
+}
+main {
+  min-height: 65vh;
+  padding: 15px 0;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+input, select, button {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid #999;
+}
+button {
+  cursor: pointer;
+  background: #eee;
+}
+button:disabled {
+  cursor: wait;
+}
+.error {
+  color: #a40000;
+}
+.current-weather, .forecast-day {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.forecast-day {
+  flex: 1 1 180px;
+}
+.forecast-day h4 {
+  margin-top: 0;
+}
+footer {
+  margin-top: 25px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
